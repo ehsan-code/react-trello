@@ -1,12 +1,7 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import App from "./Components/App";
-import store from "./store";
-import { Provider } from "react-redux";
-
-ReactDOM.render(
-  <Provider store={store}>
-    <App />
-  </Provider>,
-  document.getElementById("root")
-);
+export * from "./listsActions";
+export * from "./cardsActions";
+export const CONSTANTS = {
+  ADD_CARD: "ADD_CARD",
+  ADD_LIST: "ADD_LIST",
+  DRAG_HAPPENED: "DRAG_HAPPENED",
+};
